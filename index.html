@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Number Guesser</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Number Guesser</h2>
+      <form action="" id="form">
+        <label
+          >Pick number between <span class="min-num"></span> -
+          <span class="max-num"></span
+        ></label>
+        <div class="nole">
+          <input type="number" placeholder="Enter Guess" class="input" />
+          <button type="submit" class="check">CHECK</button>
+        </div>
+      </form>
+      <p class="demo">LET'S GO!!!</p>
+    </div>
+    <div class="score">SCORE: <span id="score">0</span></div>
+
+    <div
+      style="
+        text-align: center;
+        color: white;
+        font-size: 10px;
+        padding-top: 10px;
+      "
+    >
+      <p>
+        NB: Your score would be updated after you click on "<i>PLAY AGAIN</i>"
+      </p>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

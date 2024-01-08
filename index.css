@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: "Courier New", Courier, monospace;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  /* background: linear-gradient(rgb(9, 9, 188), rgb(14, 14, 205)); */
+  background-color: rgb(14, 14, 14);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.container {
+  width: 400px;
+  height: fit-content;
+  background: rgb(195, 255, 0);
+  padding: 20px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin-top: 50px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.1);
+}
+.container h2 {
+  margin-bottom: 10px;
+  font-size: 35px;
+  text-align: center;
+  color: brown;
+}
+form .nole {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+form label {
+  display: block;
+  margin-bottom: 10px;
+  text-align: center;
+}
+form input {
+  width: 280px;
+  height: 30px;
+  padding-left: 10px;
+  border: 1px solid black;
+  display: inline;
+}
+form button {
+  width: 100px;
+  height: 30px;
+  cursor: pointer;
+  font-size: 10px;
+  font-weight: 500;
+  display: inline;
+  background-color: brown;
+  color: rgb(195, 255, 0);
+  border: none;
+}
+.demo {
+  padding-top: 10px;
+  font-size: 12px;
+  text-align: center;
+}
+.score {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 25px;
+  font-weight: 800;
+  color: white;
+}
+.score span {
+  color: rgb(195, 255, 0);
+  animation: load 2s linear;
+}
+
+@keyframes load {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .container {
+    width: 250px;
+    margin: auto;
+  }
+}
