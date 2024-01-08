@@ -80,6 +80,11 @@ form button {
   animation: load 2s linear;
 }
 
+.score span::before {
+  content: "0";
+  margin-left: -15px;
+}
+
 @keyframes load {
   0% {
     opacity: 0;
